@@ -1,0 +1,7 @@
+<h2>所有資料</h2>
+
+<ul>
+    <% tasks.forEach(function(task) { %>
+        <li><a href='/task/<%= task.id %>'><%= task.id %>: <%= task.title %></a></li>
+    <% }); %>
+</ul>

@@ -5,13 +5,15 @@ let taskController = {
   index: function (req, res) {
     Task.findAll()
       .then(function (tasks) {
-        res.json(tasks);
+        // res.json(tasks);
+        res.render('index', {"tasks": tasks});
       });
   },
   show: function (req, res) {
     Task.findById(req.params.id)
       .then(function (task) {
-        res.json(task);
+        // res.json(task);
+        res.render('show', {"task": task});
       });
   },
   store: function (req, res) {

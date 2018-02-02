@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.16.2",
     "mysql2": "^1.5.1",
     "sequelize": "^4.32.3",
     "sequelize-cli": "^3.2.0"
